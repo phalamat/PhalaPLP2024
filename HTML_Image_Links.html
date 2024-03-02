@@ -1,0 +1,85 @@
+ <!-- This html file will display my portfolio and list all my projects  -->
+ <!-- Developer: Phala Mathobela -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            }
+
+            li {
+            float: left;
+            }
+
+            li a {
+            display: block;
+            padding: 8px;
+            background-color: #dddddd;
+            }
+            h2{
+                color: blue;
+            }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Menu">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Home">
+        <h2>Home</h2>
+        <p class="center">Welcome to our website! This is a technology section.</p>
+        <a href="https://www.digitaltrends.com/" class="center"><img src="technology.jpg" alt="Technology"></a>
+    </section>
+
+    <section id="Gallery">
+        <h2>Gallery</h2>
+        <p>This is the nature section.</p>
+        <div class="gallery">
+            <a href="https://www.nature-reserve.co.za/Free_State_Nature_Reserve.html"><img src="golden-gate-highlands-national-park-786x416.jpg" alt="Nature"></a>
+            <a href="https://www.nature-reserve.co.za/Mpumalanga_Nature_Reserve.html"><img src="mpumalanga-blyde-river-canyon-786x416.jpg" alt="Nature"></a>
+            <a href="https://www.nature-reserve.co.za/Limpopo_Nature_Reserve.html"><img src="mapumgubwe-mountain-biking-limpopo-786x416.jpg" alt="Nature"></a>
+        </div>
+    </section>
+
+    <section id="Menu">
+        <h2>Menu</h2>
+        <p>This is the food section.</p>
+        <div class="gallery">
+            <a href="https://www.food.com/ideas/quick-easy-chicken-dinners-6013?ref=nav#c-1676"><img src="OPzstQzRXa49gt3jYybt_lemon-chicken-milanese-9797.jpg" alt="Food 1">Lemon Chicken Milanese</a> 
+            <a href="https://www.food.com/ideas/quick-easy-chicken-dinners-6013?ref=nav#c-1676"><img src="efGkdYZGTCKxdCbpTMGL_GK-NLE-Fried-Chicken-Sandwich-Hot-Honey_16x9-1 (1).jpg" alt="Food 2">Fried Chicken Sandwich</a> 
+            <a href="https://www.food.com/ideas/quick-easy-chicken-dinners-6013?ref=nav#c-1676"><img src="P9VSUJAXQIKw3mJAxI98_Oven Fried Chicken II_final_2.jpg" alt="Food 3">Oven Fried Chicken</a> 
+        </div>
+    </section>
+
+</body>
+</html>
